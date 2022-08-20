@@ -1,0 +1,14 @@
+index.html -> 로딩되는 화면처럼 구성(splash)
+(일정 시간이 소요되면 자동으로 main.html로 화면이 전환되는 작업을 진행 - 방법1) 
+meta 태그에- refresh라는 기능을 넣을 예정(css/indec.css)
+
+main.html ->  회원가입, 로그인 버튼 (js/main.js + css/main.css)
+
+db_con.php -> DB 접속정보
+
+register.html -> 회원가입 화면 -> register_ok.php (js/register.js + css/register.css)
+//(db/register.sql)
+
+login.html -> 로그인 화면 -> login_ok.php (js/login.js + css/login.css)
+
+chat.html(-> chat.php로 파일 확장자 변경) (js/chat.js + css/chat.css)

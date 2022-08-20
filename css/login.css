@@ -1,0 +1,71 @@
+/* register.css */
+@charset "utf-8";
+
+#login{
+    width: 100%; height: 100vh;
+    position: relative;
+    background: #5d6ea6;
+    background: linear-gradient(45deg, #5d6ea6 0%, #68658b 48%, #5f38a3 85%, #8643be 100%);
+    
+    color: #002741;
+    color: #fff;
+}
+#login .frame{
+    position: absolute;
+    top: 50%; left: 50%;
+    width: calc(100% - 20px);
+    max-width: 480px;
+    transform: translate(-50%, -50%);
+    padding: 20px 0;
+}
+#login .frame fieldset{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+#login .frame fieldset legend{
+    font-size: 28px;
+    color: #fff;
+    padding: 0 10px;
+}
+#login .frame fieldset .login_input{
+    padding: 20px;
+}
+#login .frame fieldset .login_input ul{
+    padding: 10px 0;
+}
+#login .frame fieldset .login_input ul li{
+    padding: 5px 0;
+} 
+#login .frame fieldset .login_input ul li span{} 
+#login .frame fieldset .login_input ul li span label{
+    font-size: 14px; line-height: 40px;
+} 
+#login .frame fieldset .login_input ul li span input{
+    width: 100%; height: 40px;
+    border: none;
+    border-bottom: 1px solid #ddd; 
+    color: #fff;
+    background: transparent;
+    padding: 0 10px;
+    outline-color: #5d6ea6;
+} 
+#login .frame fieldset .login_input ul li span input::placeholder{
+    color: #ccc; font-size: 14px;
+}
+#login .frame fieldset .login_input .lg_btn{
+    padding: 10px 0;
+    text-align: center;
+}
+#login .frame fieldset .login_input .lg_btn button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5d6ea6;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+#login .frame fieldset .login_input .lg_btn button:hover{
+    background-color: #002741;
+    transition: background-color 0.5s;
+}

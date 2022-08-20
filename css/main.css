@@ -1,0 +1,93 @@
+/* main.css */
+@charset "utf-8";
+
+body{
+    width: 100%; height: 100vh;
+    position: relative;
+    background: #5d6ea6;
+    background: linear-gradient(45deg, #5d6ea6 0%, #68658b 48%, #5f38a3 85%, #8643be 100%);
+}
+#main .center_btn{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+#main .center_btn.active{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+    transition-delay: 1.5s;
+}
+#main .center_btn a{
+    display: block;
+    width: 180px; height: 60px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 60px;
+    position: relative;
+    color: #002741;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+#main .center_btn a:hover{
+    color: #fff;
+    background-color: #68658b;
+    box-shadow: 0 0 10px #002741, 0 0 40px #002741, 0 0 80px #002741;
+    transition-delay: 1s;
+}
+#main .center_btn a{}
+#main .center_btn a span{
+    position: absolute;
+    display: block;
+}
+#main .center_btn a span:nth-child(1){
+    top: 0; left: -100%;
+    width: 100%; height: 2px;
+    background: linear-gradient(90deg, transparent, #002741);
+}
+#main .center_btn a:hover span:nth-child(1){
+    left: 100%;
+    transition: left 1s;
+}
+#main .center_btn a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px; height: 100%;
+    background: linear-gradient(180deg, transparent, #002741);
+}
+#main .center_btn a:hover span:nth-child(2){
+    top: 100%;
+    transition: top 1s;
+    transition-delay: 0.25s;
+}
+#main .center_btn a span:nth-child(3){
+    bottom: 0; right: -100%;
+    width: 100%; height: 2px;
+    background: linear-gradient(270deg, transparent, #002741);
+}
+#main .center_btn a:hover span:nth-child(3){
+    right: 100%;
+    transition: right 1s;
+    transition-delay: 0.5s;
+}
+#main .center_btn a span:nth-child(4){
+    bottom: -100%; left: 0;
+    width: 2px; height: 100%;
+    background: linear-gradient(360deg, transparent, #002741);
+}
+#main .center_btn a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: bottom 1s;
+    transition-delay: 0.75s;
+}
+
+#main .center_btn .main_info{
+    font-size: 13px;
+    color: #aaa;
+    font-style: italic;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+}

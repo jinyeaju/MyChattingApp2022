@@ -1,0 +1,133 @@
+/* chat.css */
+@charset "utf-8";
+
+.hide{display: none;}
+
+header{
+    max-width: 480px;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #68658b;
+    position: relative;
+}
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .logo a{
+    display: block;
+    color: #fff;
+}
+header .logo a img{
+    display: block;
+    height: 40px;
+    filter: invert(100%);
+}
+header .logo .logout_btn{
+    position: absolute;
+    top: 50%; right: 10px;
+    transform: translateY(-50%);
+    height: 24px;
+    cursor: pointer;
+    filter: invert(80%);
+}
+header .logo .logout_btn:hover{
+    filter: invert(100%);
+}
+
+section{
+    max-width: 480px;
+    margin: 0 auto;
+    height: calc(100vh - 60px);
+    background: #5d6ea6;
+    background: linear-gradient(45deg, #5d6ea6 0%, #68658b 48%, #5f38a3 85%, #8643be 100%);
+}
+section article{
+    height: 85%;
+    padding: 20px;
+    /* border: 1px solid #002741; */
+    box-shadow: inset 2px 2px 10px rgba(0, 39, 65, 0.75),  inset -2px -2px 10px rgba(255, 255, 255, 0.5);
+    overflow-y: hidden;
+}
+section article ul{
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+section article ul::-webkit-scrollbar{width: 0;}
+
+section article ul li{
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+section article ul li p{width: 100%;}
+section article ul li span{
+    display: flex;
+    align-items: flex-start;
+    color: #68658b;
+    border-radius: 20px;
+    background-color: #eee;
+    box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.25),
+                inset -1px -1px 8px rgba(255, 255, 255, 0.95);
+    padding: 10px;
+}
+section article ul li span button{
+    margin-left: 10px;
+    width: 18px; height: 18px;
+    border-radius: 50%;           
+    background-color: #68658b;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section article ul li span button:hover{
+    background-color: #5f38a3;
+    transition: background-color 0.5s;
+}
+section article ul li.mine{text-align: right; justify-content: flex-end;}
+section article ul li.mine span{text-align: left; background-color: #eec;}
+
+section article ul li span.deleteMsg{
+    background-color: rgba(255, 255, 255, 0.15);
+    color: rgba(0, 0, 0, 0.35);
+}
+
+
+section form{
+    width: 100%; height: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section form textarea{
+    width: 80%; height: 100%;
+    padding: 10px;
+    resize: none;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+section form input{
+    width: 20%; height: 100%;
+    /* background-color: #ffff99; */
+    background-color: #68658b;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+}
+section form input:hover{
+    background-color: #5f38a3;
+    transition: background-color 0.5s;
+}
+
